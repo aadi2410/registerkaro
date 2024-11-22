@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import RegisterKaro from './layout/header';
+import '../src/App.css'
 
 
 function App() {
