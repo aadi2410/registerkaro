@@ -106,6 +106,10 @@
     text-align: start;
   }
 
+  .choose-img-box{
+    position: relative;
+}
+
   .choose-text{
     color: #ffa229;
     font-weight: 600 !important;
@@ -131,4 +135,98 @@
 
   .choose-content-text{
     margin-bottom: 24px !important;
+  }
+
+  .choose-side-card{
+    animation-name: chooseimgcontentbox;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: absolute;
+    right: 00px;
+    bottom: 70px;
+    border-radius: 5px;
+    box-shadow: 2px 0 15px 5px rgba(1, 6, 33, .06);
+    z-index: 1;
+    text-align: start;
+  }
+
+  .circle-box{
+    animation-name: circleboxmove;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    overflow: hidden;
+    opacity: .3;
+    background-color: #ffa229;
+    left: -30px;
+    box-shadow: 2px 0 15px 5px rgba(1, 6, 33, .06);
+  }
+
+  @keyframes chooseimgcontentbox {
+    0% {
+        bottom: 65px;
+      }
+    
+      25% {
+        bottom: 60px;
+      }
+    
+      50% {
+        bottom: 55px;
+      }
+    
+      75% {
+        bottom: 60px;
+      }
+    
+      100% {
+        bottom: 65px;
+      }
+  }
+
+  @keyframes circleboxmove {
+    0% {
+        top: 190px;
+      }
+    
+      25% {
+        top: 200px;
+      }
+    
+      50% {
+        top: 180px;
+      }
+    
+      75% {
+        top: 200px;
+      }
+    
+      100% {
+        top: 190px;
+      }
+  }
+
+  .business-setting-box{
+    background-image: url('../assets/images/business-setting-bg.png');
+    padding-block: 80px 50px;
+  }
+
+  .business-inner-div{
+    transition: all .3s;
+  }
+
+  .business-inner-div:hover{
+    margin-top: -10px;
+  }
+
+  .right-arrow-icon{
+    cursor: pointer;
+  }
+  .right-arrow-icon:hover{
+    filter:brightness(0.9);
   }

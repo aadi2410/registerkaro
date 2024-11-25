@@ -12,7 +12,7 @@ import {
   Box,
   styled
 } from "@mui/material";
-import { HeaderProfile, Logo, Dot, ChooseImg,CheckIcon } from "../assets";
+import { HeaderProfile, Logo, Dot, ChooseImg,CheckIcon, RightArrowIcon } from "../assets";
 import ResponsiveAppBar from "./navbar";
 
 const HeaderContainer = styled(Container)({
@@ -106,8 +106,8 @@ const HomePage = () => {
 
       {/* Hero Section */}
       <HeaderContainer maxWidth="lg">
+        <Box className='circle-box' />
         <Grid container spacing={4} alignItems="center">
-          {/* Text Content */}
           <Grid item xs={12} md={6}>
             <Typography variant="h5" style={{ fontWeight: "bold" }}>
               We take care of ALL your business compliance needs
@@ -140,8 +140,6 @@ const HomePage = () => {
               Get Started
             </Button>
           </Grid>
-
-          {/* Image Content */}
           <Grid item xs={12} md={6} style={{ textAlign: "center", position: 'relative' }}>
             <img className='homepage-side-img' src={Dot} alt="dots" />
             <Card className='homepage-side-card'
@@ -203,7 +201,7 @@ const HomePage = () => {
         </Grid>
       </HeaderContainer>
 
-      {/* Stats Section */}
+      {/* Choose Section */}
       <ChooseBox style={{backgroundColor: '#f0f4ff', zIndex: -2, position: 'relative', top: -5, padding: '80px 0px'}}>
         <Container maxWidth="lg">
           <Grid container spacing={4} sx={{alignItems: 'center'}}>
@@ -213,6 +211,31 @@ const HomePage = () => {
                 alt="RegisterKaro"
                 style={{ width: "100%", maxWidth: 421, height: 600, objectFit: 'contain'}}
               />
+              <Card className='choose-side-card'
+                style={{ textAlign: "center", padding: "10px" }}
+                elevation={3}
+              >
+                <CardContent style={{padding: 0, display: 'flex', alignItems: 'center'}}>
+                  <Box style={{borderRight: '1px solid lightgray', maxWidth: 80}}>
+                    <Typography
+                      style={{ fontWeight: 500, color: "inherit", textAlign: 'start', fontSize: 18, lineHeight: 1.3 }}
+                    >
+                      100+ Rating
+                    </Typography>
+                    <Typography variant="body1" style={{textAlign: 'start', fontWeight: 400, fontSize: 12, color: '#161e2e'}}>
+                    100+ Rating
+                    </Typography>
+                  </Box>
+                  <Box>
+                    <Typography
+                      style={{ fontWeight: "normal", color: "inherit", textAlign: 'start', fontSize: 14, maxWidth: 130, paddingLeft: 10 }}
+                    >
+                      Trusted by <b>20,000+</b> clients
+                    </Typography>
+                  </Box>
+
+                </CardContent>
+              </Card>
             </Grid>
             <Grid item xs={12} md={6}>
               <Box>
@@ -243,6 +266,102 @@ const HomePage = () => {
           </Grid>
         </Container>
       </ChooseBox>
+
+      {/* Services section */}
+      <Box style={{paddingTop: 80}}>
+        <Container maxWidth="lg">
+          <Typography className="choose-text" style={{textAlign: 'center', width: 'fit-content', marginInline: 'auto'}}>Our Services</Typography>
+          <Grid container spacing={4} mt={3} style={{borderBottom: '1px solid gray', paddingBottom: 50}}>
+            <Grid item xs={12} sm={6} md={3} style={{textAlign: 'center'}}>
+              <Box style={{boxShadow: '0px 0px 15px lightgray', marginBottom: 10, width: 100, height: 100, borderRadius: 5, display: 'inline-block'}}></Box>
+              <Typography>Company <br/> Formation</Typography>
+            </Grid>
+            <Grid item xs={12} sm={6} md={3} style={{textAlign: 'center'}}>
+              <Box style={{boxShadow: '0px 0px 15px lightgray', marginBottom: 10, width: 100, height: 100, borderRadius: 5, display: 'inline-block'}}></Box>
+              <Typography>Company Secretarial <br/> Services</Typography>
+            </Grid>
+            <Grid item xs={12} sm={6} md={3} style={{textAlign: 'center'}}>
+              <Box style={{boxShadow: '0px 0px 15px lightgray', marginBottom: 10, width: 100, height: 100, borderRadius: 5, display: 'inline-block'}}></Box>
+              <Typography>Virtual Office <br/> Address</Typography>
+            </Grid>
+            <Grid item xs={12} sm={6} md={3} style={{textAlign: 'center'}}>
+              <Box style={{boxShadow: '0px 0px 15px lightgray', marginBottom: 10, width: 100, height: 100, borderRadius: 5, display: 'inline-block'}}></Box>
+              <Typography>Annual Compliance <br/> Services</Typography>
+            </Grid>
+            <Grid item xs={12} sm={6} md={3} style={{textAlign: 'center'}}>
+              <Box style={{boxShadow: '0px 0px 15px lightgray', marginBottom: 10, width: 100, height: 100, borderRadius: 5, display: 'inline-block'}}></Box>
+              <Typography>VAT Registration, <br/> Preparation & Filing</Typography>
+            </Grid>
+            <Grid item xs={12} sm={6} md={3} style={{textAlign: 'center'}}>
+              <Box style={{boxShadow: '0px 0px 15px lightgray', marginBottom: 10, width: 100, height: 100, borderRadius: 5, display: 'inline-block'}}></Box>
+              <Typography>Payroll <br/> Services</Typography>
+            </Grid>
+            <Grid item xs={12} sm={6} md={3} style={{textAlign: 'center'}}>
+              <Box style={{boxShadow: '0px 0px 15px lightgray', marginBottom: 10, width: 100, height: 100, borderRadius: 5, display: 'inline-block'}}></Box>
+              <Typography>Bookkeeping <br/> Services</Typography>
+            </Grid>
+            <Grid item xs={12} sm={6} md={3} style={{textAlign: 'center'}}>
+              <Box style={{boxShadow: '0px 0px 15px lightgray', marginBottom: 10, width: 100, height: 100, borderRadius: 5, display: 'inline-block'}}></Box>
+              <Typography>Live Online Webinars <br/> & Workshops</Typography>
+            </Grid>
+          </Grid>
+          <Box style={{paddingBlock: 30, display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 10}}>
+            <Typography style={{maxWidth: '60%', fontSize: 18, lineHeight: 1.8}}>Our Client Services Team is always happy to talk to you about what is best for your needs. Contact our team to find out if we are the right fit for you.</Typography>
+            <a href="" style={{color: '#ffa229', textDecoration: 'none', fontSize: 20, position: 'relative', paddingRight: 30, display: 'inline-block'}}>
+              Explore our services
+              <img src={RightArrowIcon} className="right-arrow-icon" style={{width: 24, position: 'absolute', top: 4, right: 0}} alt="" />
+            </a>
+          </Box>
+        </Container>
+      </Box>
+
+      {/* Hero Section */}
+      <Box className='business-setting-box'>
+        <Container maxWidth="lg">
+          <Grid container spacing={4}>
+            <Grid item className="business-inner-div" xs={12} sm={9}>
+              <Box style={{background: 'white', borderRadius: 12, padding: 16, display: 'flex'}}>
+                <Box style={{padding: 16, borderRight: '1px solid lightgray'}}>
+                  <Typography style={{fontSize: 20, fontWeight: 500, minHeight: 60, marginBottom: 20}}>Small business & Startup Accounts</Typography>
+                  <Typography style={{fontSize: 14, marginBottom: 20}}>Make sure your business meets its statutory requirements.</Typography>
+                  <Typography style={{fontSize: 14, fontWeight: 700, position: 'relative'}}>Number of employees
+                    <br />
+                  0 - 10
+                  <img src={RightArrowIcon} className="right-arrow-icon" style={{width: 30, position: 'absolute', top: 12, right: 0}} alt="" />
+                  </Typography>
+                </Box>
+                <Box style={{padding: 16, borderRight: '1px solid lightgray'}}>
+                  <Typography style={{fontSize: 20, fontWeight: 500, minHeight: 60, marginBottom: 20}}>Growing Business Package</Typography>
+                  <Typography style={{fontSize: 14, marginBottom: 20}}>Additional support to help you reach your business goals.</Typography>
+                  <Typography style={{fontSize: 14, fontWeight: 700, position: 'relative'}}>Number of employees
+                    <br />
+                  11 - 50
+                  <img src={RightArrowIcon} className="right-arrow-icon" style={{width: 30, position: 'absolute', top: 12, right: 0}} alt="" />
+                  </Typography>
+                </Box>
+                <Box style={{padding: 16}}>
+                  <Typography style={{fontSize: 20, fontWeight: 500, minHeight: 60, marginBottom: 20}}>Scale-Up Company Offer</Typography>
+                  <Typography style={{fontSize: 14, marginBottom: 20}}>Compliance, reporting & analysis of performance.</Typography>
+                  <Typography style={{fontSize: 14, fontWeight: 700, position: 'relative'}}>Number of employees
+                    <br />
+                  50+
+                  <img src={RightArrowIcon} className="right-arrow-icon" style={{width: 30, position: 'absolute', top: 12, right: 0}} alt="" />
+                  </Typography>
+                </Box>
+              </Box>
+            </Grid>
+            <Grid item className="business-inner-div" xs={12} sm={3}>
+              <Box style={{background: 'white', borderRadius: 12, padding: '32px 28px'}}>
+              <Typography style={{fontSize: 20, fontWeight: 500, minHeight: 60, marginBottom: 20}}>Setting up a business</Typography>
+              <Typography style={{fontSize: 14, marginBottom: 20}}>Make sure your business meets its statutory requirements.</Typography>
+              <Typography style={{fontSize: 14, fontWeight: 700, position: 'relative'}}>Company Formation <br /> Services 
+              <img src={RightArrowIcon} className="right-arrow-icon" style={{width: 30, position: 'absolute', top: 12, right: 0}} alt="" />
+              </Typography>
+              </Box>
+            </Grid>
+          </Grid>
+        </Container>
+      </Box>
     </Box>
   );
 };
