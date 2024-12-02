@@ -12,8 +12,11 @@ import {
   Box,
   styled
 } from "@mui/material";
-import { HeaderProfile, Logo, Dot, ChooseImg,CheckIcon, RightArrowIcon } from "../assets";
+import { HeaderProfile, Logo, Dot, ChooseImg,CheckIcon, RightArrowIcon, PlusIcon, PartnerRightImg } from "../assets";
 import ResponsiveAppBar from "./navbar";
+import Checkbox from '@mui/material/Checkbox';
+
+const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
 const HeaderContainer = styled(Container)({
     '& .header-img-bg': {
@@ -92,6 +95,15 @@ const ChooseBox = styled(Box)({
       width: 'calc(100% - 40px)'
     },
   },
+})
+
+const PartnerBox = styled(Box)({
+  '& .partner-heading': {
+    textAlign: 'center',
+    fontSize: 40,
+    fontWeight: 700,
+    lineHeight: 1.2
+  }
 })
 
 const HomePage = () => {
@@ -362,6 +374,295 @@ const HomePage = () => {
           </Grid>
         </Container>
       </Box>
+
+      {/* BusinessGrow Section */}
+      <Box className='business-grow-box' style={{paddingBlock: 100}}>
+        <Container maxWidth="lg">
+          <Typography style={{textAlign: 'center', fontSize: 37, fontWeight: 600, paddingBottom: 50, lineHeight: 1.2 }}>
+            Grow Your Business instead of Complex <br />
+            Registration processes and leave it for us
+          </Typography>
+          <Grid container spacing={4} style={{alignItems: 'center'}}>
+            <Grid item xs={12} md={6}>
+              <Typography style={{fontSize: 22, textAlign: 'center', minHeight: 66}}>
+                With other service providers you would have to <br /> pay for each compliance filing individually!
+              </Typography>
+              <Box className='outer-grow-box'>
+                <Box className='counter-box'>50k
+                  <Box style={{position: 'relative'}}>
+                    <img src={PlusIcon} style={{position: 'absolute', width: 20, top: -40, left: -15 }} alt="" />
+                    <img src={PlusIcon} style={{position: 'absolute', width: 20, top: 0, right: -20}} alt="" />
+                    <img src={PlusIcon} style={{position: 'absolute', width: 20, top: 3, left: -57}} alt="" />
+                  </Box>
+                </Box>
+                <Box className='inner-grow-box'>
+                  <Box style={{padding: 8, borderRadius: 8, display: 'flex', justifyContent: 'start', alignItems: 'center', border: '1px solid lightgray'}}>
+                    <Checkbox
+                      {...label}
+                      defaultChecked
+                      sx={{
+                        color: '#ffa229',
+                        '&.Mui-checked': {
+                          color: '#ffa229',
+                        },
+                      }}
+                    />  Financial Preparation and Audit support - Rs.4,000
+                  </Box>
+                  <Box style={{padding: 8, borderRadius: 8, display: 'flex', justifyContent: 'start', alignItems: 'center', border: '1px solid lightgray'}}>
+                    <Checkbox
+                      {...label}
+                      defaultChecked
+                      sx={{
+                        color: '#ffa229',
+                        '&.Mui-checked': {
+                          color: '#ffa229',
+                        },
+                      }}
+                    />  Financial Preparation and Audit support - Rs.4,000
+                  </Box>
+                  <Box style={{padding: 8, borderRadius: 8, display: 'flex', justifyContent: 'start', alignItems: 'center', border: '1px solid lightgray'}}>
+                    <Checkbox
+                      {...label}
+                      defaultChecked
+                      sx={{
+                        color: '#ffa229',
+                        '&.Mui-checked': {
+                          color: '#ffa229',
+                        },
+                      }}
+                    />  Financial Preparation and Audit support - Rs.4,000
+                  </Box>
+                  <Box style={{padding: 8, borderRadius: 8, display: 'flex', justifyContent: 'start', alignItems: 'center', border: '1px solid lightgray'}}>
+                    <Checkbox
+                      {...label}
+                      defaultChecked
+                      sx={{
+                        color: '#ffa229',
+                        '&.Mui-checked': {
+                          color: '#ffa229',
+                        },
+                      }}
+                    />  Financial Preparation and Audit support - Rs.4,000
+                  </Box>
+                  <Box style={{padding: 8, borderRadius: 8, display: 'flex', justifyContent: 'start', alignItems: 'center', border: '1px solid lightgray'}}>
+                    <Checkbox
+                      {...label}
+                      defaultChecked
+                      sx={{
+                        color: '#ffa229',
+                        '&.Mui-checked': {
+                          color: '#ffa229',
+                        },
+                      }}
+                    />  Financial Preparation and Audit support - Rs.4,000
+                  </Box>
+                  <Box style={{padding: 8, borderRadius: 8, display: 'flex', justifyContent: 'start', alignItems: 'center', border: '1px solid lightgray'}}>
+                    <Checkbox
+                      {...label}
+                      defaultChecked
+                      sx={{
+                        color: '#ffa229',
+                        '&.Mui-checked': {
+                          color: '#ffa229',
+                        },
+                      }}
+                    />  Financial Preparation and Audit support - Rs.4,000
+                  </Box>
+                  <Box style={{padding: 8, borderRadius: 8, display: 'flex', justifyContent: 'start', alignItems: 'center', border: '1px solid lightgray'}}>
+                    <Checkbox
+                      {...label}
+                      defaultChecked
+                      sx={{
+                        color: '#ffa229',
+                        '&.Mui-checked': {
+                          color: '#ffa229',
+                        },
+                      }}
+                    />  Financial Preparation and Audit support - Rs.4,000
+                  </Box>
+                  <Box style={{padding: 8, borderRadius: 8, display: 'flex', justifyContent: 'start', alignItems: 'center', border: '1px solid lightgray'}}>
+                    <Checkbox
+                      {...label}
+                      defaultChecked
+                      sx={{
+                        color: '#ffa229',
+                        '&.Mui-checked': {
+                          color: '#ffa229',
+                        },
+                      }}
+                    />  Financial Preparation and Audit support - Rs.4,000
+                  </Box>
+                  <Box style={{padding: 8, borderRadius: 8, display: 'flex', justifyContent: 'start', alignItems: 'center', border: '1px solid lightgray'}}>
+                    <Checkbox
+                      {...label}
+                      defaultChecked
+                      sx={{
+                        color: '#ffa229',
+                        '&.Mui-checked': {
+                          color: '#ffa229',
+                        },
+                      }}
+                    />  Financial Preparation and Audit support - Rs.4,000
+                  </Box>
+                  <Box style={{padding: 8, borderRadius: 8, display: 'flex', justifyContent: 'start', alignItems: 'center', border: '1px solid lightgray'}}>
+                    <Checkbox
+                      {...label}
+                      defaultChecked
+                      sx={{
+                        color: '#ffa229',
+                        '&.Mui-checked': {
+                          color: '#ffa229',
+                        },
+                      }}
+                    />  Financial Preparation and Audit support - Rs.4,000
+                  </Box>
+                  <Box style={{padding: 8, borderRadius: 8, display: 'flex', justifyContent: 'start', alignItems: 'center', border: '1px solid lightgray'}}>
+                    <Checkbox
+                      {...label}
+                      defaultChecked
+                      sx={{
+                        color: '#ffa229',
+                        '&.Mui-checked': {
+                          color: '#ffa229',
+                        },
+                      }}
+                    />  Financial Preparation and Audit support - Rs.4,000
+                  </Box>
+                  <Box style={{padding: 8, borderRadius: 8, display: 'flex', justifyContent: 'start', alignItems: 'center', border: '1px solid lightgray'}}>
+                    <Checkbox
+                      {...label}
+                      defaultChecked
+                      sx={{
+                        color: '#ffa229',
+                        '&.Mui-checked': {
+                          color: '#ffa229',
+                        },
+                      }}
+                    />  Financial Preparation and Audit support - Rs.4,000
+                  </Box>
+                  <Box style={{padding: 8, borderRadius: 8, display: 'flex', justifyContent: 'start', alignItems: 'center', border: '1px solid lightgray'}}>
+                    <Checkbox
+                      {...label}
+                      defaultChecked
+                      sx={{
+                        color: '#ffa229',
+                        '&.Mui-checked': {
+                          color: '#ffa229',
+                        },
+                      }}
+                    />  Financial Preparation and Audit support - Rs.4,000
+                  </Box>
+                  <Box style={{padding: 8, borderRadius: 8, display: 'flex', justifyContent: 'start', alignItems: 'center', border: '1px solid lightgray'}}>
+                    <Checkbox
+                      {...label}
+                      defaultChecked
+                      sx={{
+                        color: '#ffa229',
+                        '&.Mui-checked': {
+                          color: '#ffa229',
+                        },
+                      }}
+                    />  Financial Preparation and Audit support - Rs.4,000
+                  </Box>
+                  <Box style={{padding: 8, borderRadius: 8, display: 'flex', justifyContent: 'start', alignItems: 'center', border: '1px solid lightgray'}}>
+                    <Checkbox
+                      {...label}
+                      defaultChecked
+                      sx={{
+                        color: '#ffa229',
+                        '&.Mui-checked': {
+                          color: '#ffa229',
+                        },
+                      }}
+                    />  Financial Preparation and Audit support - Rs.4,000
+                  </Box>
+                </Box>
+              </Box>
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <Typography style={{fontSize: 28, textAlign: 'center', minHeight: 66, display: 'flex', justifyContent: 'center', alignItems: 'end'}}>
+                Or you could
+              </Typography>
+              <Box className='outer-grow-box right-grow-box'>    
+                <Box style={{padding: 8, borderRadius: 8, display: 'flex', justifyContent: 'center', alignItems: 'center', border: '1px solid lightgray'}}>
+                    <Checkbox
+                      {...label}
+                      defaultChecked
+                      sx={{
+                        color: '#ffa229',
+                        '&.Mui-checked': {
+                          color: '#ffa229',
+                        },
+                      }}
+                    />
+                  Use RegisterKaro</Box>
+                <Typography style={{marginTop: 48, maxWidth: '90%', marginInline: 'auto'}}>Get all your <b>Compliance</b> done with the help of <b>Industry Experts</b> and channelize that precious time to grow your <b>business</b>.</Typography>
+                <Typography style={{marginTop: 48}}>Get Started!</Typography>
+              </Box>
+            </Grid>
+          </Grid>
+        </Container>
+      </Box>
+
+      {/* Partner Section */}
+        <PartnerBox style={{backgroundColor: '#f0f4ff',padding: '80px 0px'}}>
+          <Container maxWidth="lg">
+            <Typography className="partner-heading">We <span style={{color: '#ffa229'}}>partner</span> with the best, <br />
+            so that your business can flow <span style={{color: '#ffa229'}}>seamlessly.</span></Typography>
+            <Typography style={{textAlign: 'center', marginTop: 24}}>Your Business needs numerous expertise and that's why we are providing you the best services with the best names in the field .
+            </Typography>
+          </Container>
+          <Box style={{display: 'flex', gap: 24, flexWrap: 'nowrap', justifyContent: 'center', overflow: 'auto', marginTop: 80}}>
+            <Box style={{boxShadow: '0px 0px 10px 5px lightgray', marginBottom: 10, width: 100, height: 100, borderRadius: 5, display: 'inline-block'}}></Box>
+            <Box style={{boxShadow: '0px 0px 10px 5px lightgray', marginBottom: 10, width: 100, height: 100, borderRadius: 5, display: 'inline-block'}}></Box>
+            <Box style={{boxShadow: '0px 0px 10px 5px lightgray', marginBottom: 10, width: 100, height: 100, borderRadius: 5, display: 'inline-block'}}></Box>
+            <Box style={{boxShadow: '0px 0px 10px 5px lightgray', marginBottom: 10, width: 100, height: 100, borderRadius: 5, display: 'inline-block'}}></Box>
+            <Box style={{boxShadow: '0px 0px 10px 5px lightgray', marginBottom: 10, width: 100, height: 100, borderRadius: 5, display: 'inline-block'}}></Box>
+            <Box style={{boxShadow: '0px 0px 10px 5px lightgray', marginBottom: 10, width: 100, height: 100, borderRadius: 5, display: 'inline-block'}}></Box>
+            <Box style={{boxShadow: '0px 0px 10px 5px lightgray', marginBottom: 10, width: 100, height: 100, borderRadius: 5, display: 'inline-block'}}></Box>
+            <Box style={{boxShadow: '0px 0px 10px 5px lightgray', marginBottom: 10, width: 100, height: 100, borderRadius: 5, display: 'inline-block'}}></Box>
+            <Box style={{boxShadow: '0px 0px 10px 5px lightgray', marginBottom: 10, width: 100, height: 100, borderRadius: 5, display: 'inline-block'}}></Box>
+            <Box style={{boxShadow: '0px 0px 10px 5px lightgray', marginBottom: 10, width: 100, height: 100, borderRadius: 5, display: 'inline-block'}}></Box>
+            <Box style={{boxShadow: '0px 0px 10px 5px lightgray', marginBottom: 10, width: 100, height: 100, borderRadius: 5, display: 'inline-block'}}></Box>
+            <Box style={{boxShadow: '0px 0px 10px 5px lightgray', marginBottom: 10, width: 100, height: 100, borderRadius: 5, display: 'inline-block'}}></Box>
+          </Box>
+          <Box style={{display: 'flex', gap: 24, flexWrap: 'nowrap', justifyContent: 'center', overflow: 'auto', marginTop: 40}}>
+            <Box style={{boxShadow: '0px 0px 10px 5px lightgray', marginBottom: 10, width: 100, height: 100, borderRadius: 5, display: 'inline-block'}}></Box>
+            <Box style={{boxShadow: '0px 0px 10px 5px lightgray', marginBottom: 10, width: 100, height: 100, borderRadius: 5, display: 'inline-block'}}></Box>
+            <Box style={{boxShadow: '0px 0px 10px 5px lightgray', marginBottom: 10, width: 100, height: 100, borderRadius: 5, display: 'inline-block'}}></Box>
+            <Box style={{boxShadow: '0px 0px 10px 5px lightgray', marginBottom: 10, width: 100, height: 100, borderRadius: 5, display: 'inline-block'}}></Box>
+            <Box style={{boxShadow: '0px 0px 10px 5px lightgray', marginBottom: 10, width: 100, height: 100, borderRadius: 5, display: 'inline-block'}}></Box>
+            <Box style={{boxShadow: '0px 0px 10px 5px lightgray', marginBottom: 10, width: 100, height: 100, borderRadius: 5, display: 'inline-block'}}></Box>
+            <Box style={{boxShadow: '0px 0px 10px 5px lightgray', marginBottom: 10, width: 100, height: 100, borderRadius: 5, display: 'inline-block'}}></Box>
+            <Box style={{boxShadow: '0px 0px 10px 5px lightgray', marginBottom: 10, width: 100, height: 100, borderRadius: 5, display: 'inline-block'}}></Box>
+            <Box style={{boxShadow: '0px 0px 10px 5px lightgray', marginBottom: 10, width: 100, height: 100, borderRadius: 5, display: 'inline-block'}}></Box>
+            <Box style={{boxShadow: '0px 0px 10px 5px lightgray', marginBottom: 10, width: 100, height: 100, borderRadius: 5, display: 'inline-block'}}></Box>
+            <Box style={{boxShadow: '0px 0px 10px 5px lightgray', marginBottom: 10, width: 100, height: 100, borderRadius: 5, display: 'inline-block'}}></Box>
+            <Box style={{boxShadow: '0px 0px 10px 5px lightgray', marginBottom: 10, width: 100, height: 100, borderRadius: 5, display: 'inline-block'}}></Box>
+          </Box>
+          <Container maxWidth="lg" style={{marginTop: 100}}>
+          <Grid container spacing={4} sx={{alignItems: 'center'}}>
+            <Grid item xs={12} md={6}>
+              <Box>
+                <Typography className="we-do-text">WHAT WE DO</Typography>
+                <Typography className="choose-content-text">Receive support at every stage of business development.</Typography>
+                <Typography>Launch, grow and scale with ease. Each of our clients has a dedicated team that is committed to answering all queries within 24 hours, so you can rely on our helpful and professional support throughout your business journey.</Typography>
+                <Box>
+                  <Button>Popular Services</Button>
+                  <Button style={{padding: '15px 50px'}}>Get Started <img src={RightArrowIcon} className="right-arrow-icon" style={{width: 30, position: 'absolute', top: 12, right: 0}} alt="" /></Button>
+                </Box>
+              </Box>
+            </Grid>
+            <Grid className="choose-img-box" item xs={12} md={6} style={{textAlign: 'center'}}>
+              <img
+                src={PartnerRightImg}
+                alt="RegisterKaro"
+                style={{ width: "100%", maxWidth: '100%', objectFit: 'contain'}}
+              />
+            </Grid>
+          </Grid>
+        </Container>
+        </PartnerBox>
     </Box>
   );
 };

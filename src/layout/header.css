@@ -230,3 +230,52 @@
   .right-arrow-icon:hover{
     filter:brightness(0.9);
   }
+
+  .outer-grow-box{
+    text-align: center;
+    padding: 48px 20px;
+    border-radius: 15px;
+    position: relative;
+    background: #fff;
+    box-shadow: 18px 18px 55px #d9d9d9, -4px -4px 65px #fff;
+    margin-top: 16px;
+    height: 376px;
+    max-width: 85%;
+    margin-inline: auto;
+  }
+
+  .inner-grow-box{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    height: 360px; 
+    overflow: auto; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 16px;
+  }
+
+  .right-grow-box{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;   
+  }
+
+  .inner-grow-box::-webkit-scrollbar {
+    display: none;
+  }
+
+  .counter-box{
+    width: 64px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;   
+    height: 64px;
+    border-radius: 50%;
+    background-color: #ffa229;
+    font-size: 24px;
+    color: white;
+    font-weight: 400;
+    position: absolute;
+    top: -32px;
+    right: -32px;
+  }
